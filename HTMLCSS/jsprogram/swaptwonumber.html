@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swap two Number</title>
+  </head>
+  <body>
+    <script>
+      let a = Number(prompt("Enter first number:"));
+          let b = Number(prompt("Enter second number:"));
+          let temp;
+
+          document.write(`before swapping: a= ${a}`);
+          document.write("<br>")
+          document.write(`before swapping b= ${b}`);
+          document.write("<br>")
+
+          temp = a;
+          a = b;
+          b = temp;
+
+          document.write(`after swapping a= ${a}`);
+          document.write("<br>")
+          document.write(`after swapping b= ${b}`);
+          document.write("<br>")
+    </script>
+  </body>
+</html>

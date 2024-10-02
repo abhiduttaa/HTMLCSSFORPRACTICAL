@@ -1,0 +1,110 @@
+<html>
+<head>
+<title>
+  kpc
+</title>
+</head>
+<body>
+<div class="doctor-info">
+  <h2>Dr. ABC</h2>
+  <p>Phone Number: <a href="tel:9875421323">9875421323</a></p>
+  <p>Email: <a href="mailto:pritigiri094@gmail.com">pritigiri094@gmail.com</a></p>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+		}
+		
+		.form-container {
+			width: 50%;
+			margin: 40px auto;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.form-control {
+			margin-bottom: 20px;
+		}
+		
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+		
+		.form-control input, .form-control select {
+			width: 100%;
+			height: 40px;
+			margin-bottom: 20px;
+			padding: 10px;
+			border: 1px solid #ccc;
+		}
+		
+		.form-control textarea {
+			width: 100%;
+			height: 100px;
+			padding: 10px;
+			border: 1px solid #ccc;
+		}
+		
+		.btn {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		
+		.btn:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<div class="form-container">
+		<h2>Doctor Appointment Form</h2>
+		<form>
+			<div class="form-control">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+			</div>
+			<div class="form-control">
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+			</div>
+			<div class="form-control">
+				<label for="phone">Phone:</label>
+				<input type="tel" id="phone" name="phone" required>
+			</div>
+			<div class="form-control">
+				<label for="doctor">Select Doctor:</label>
+				<select id="doctor" name="doctor" required>
+					<option value="">Select Doctor</option>
+					<option value="Dr. John">Dr. John</option>
+					<option value="Dr. Emma">Dr. Emma</option>
+					<option value="Dr. Michael">Dr. Michael</option>
+				</select>
+			</div>
+			<div class="form-control">
+				<label for="date">Appointment Date:</label>
+				<input type="date" id="date" name="date" required>
+			</div>
+			<div class="form-control">
+				<label for="time">Appointment Time:</label>
+				<select id="time" name="time" required>
+					<option value="">Select Time</option>
+					<option value="9:00 AM">9:00 AM</option>
+					<option value="10:00 AM">10:00 AM</option>
+					<option value="11:00 AM">11:00 AM</option>
+				</select>
+			</div>
+			<div class="form-control">
+				<label for="message">Message:</label>
+				<textarea id="message" name="message"></textarea>
+			</div>
+			<button onclick="window.location.href='mailto:pritigiri094@gmail.com?subject=Appointment Request'">Send Message for Appointment</button>
+		</form>
+	</div>
+</body>
+</html>

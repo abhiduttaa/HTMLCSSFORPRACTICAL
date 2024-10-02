@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-Google Sheets</title>
+    <style>
+        form {
+            max-width: 400px;
+            margin: auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="DATE"],
+        input[type="number"],
+        input[type="password"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 15px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="sheetdb-form" action="https://sheetdb.io/api/v1/oyrlm8rgx2jga" method="post">
+        <input type="text" name="data[NAME]" id="uname" placeholder="name">
+        <input type="email" name="data[EMAIL]" id="uemail" placeholder="email">
+        <input type="number" name="data[PHONE]" id="unumber" placeholder="ph number">
+        <input type="text" name="data[MESSAGE]" id="umsg" placeholder="your message..">
+        <input type="submit" value="Contact Now">
+    </form>
+
+    <script>
+        var form = document.getElementById('sheetdb-form');
+        form.addEventListener("submit", e => {
+            e.preventDefault();
+            fetch(form.action, {
+                method: "POST",
+                body: new FormData(document.getElementById("sheetdb-form")),
+            }).then(
+                response => response.json()
+            ).then((html) => {
+                alert('Submitted !! 😊 Thank you ' + document.getElementById('uname').value)
+                window.location.href = '';
+                location.reload();
+            });
+        });
+    </script>
+</body>
+
+</html>

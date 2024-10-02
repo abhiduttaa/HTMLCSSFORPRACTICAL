@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstorng Number</title>
+</head>
+<body>
+    <script>
+        var x,s=0,r,n;
+        n=Number(prompt("Enter a number"));
+        x=n;
+        while(n>0){
+            r= n%10;
+            n=parseInt(n/10);
+            s = s+ Math.pow(r,3);
+        }
+        if(x==s){
+            document.write("Armstrong Number");
+        }
+        else{
+            document.write("None-Armstrong Number");
+        }
+    </script>
+</body>
+</html>

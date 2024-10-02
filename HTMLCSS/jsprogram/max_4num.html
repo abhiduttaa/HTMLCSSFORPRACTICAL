@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max 4 no </title>
+</head>
+<body>
+    <script>
+        var a,b,c,d;
+        a = Number(prompt("Enter 1'st no="));
+        b = Number(prompt("Enter 2 nd no="));
+        c = Number(prompt("Enter 3 rd no="));
+        d = Number(prompt("Enter 4 th no="));
+
+        if(a>b){
+            if(a>c){
+                if(a>d){
+                    alert("a is max  "+a);
+                }
+                else{
+                    alert("d is max  "+d);
+                }
+            }
+            else{
+                if(c>d){
+                    alert("c is max  "+c);
+                    }
+                else{
+                    alert("d is max  "+d);
+                }
+            }
+        }
+        else{
+            if(b>c){
+                if(b>d){
+                    alert("b is max  "+b);
+                }
+                else{
+                    alert("d is max  "+d);
+                }
+            }
+            else{
+                if(c>d){
+                    alert("c is max  "+c);
+                }
+                else{
+                    alert("d is max  "+d);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

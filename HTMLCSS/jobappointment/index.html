@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Appointment Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo">ABD's consultant</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="auth">
+      <button class="login-btn">Login</button>
+      <button class="signup-btn">Sign Up</button>
+    </div>
+  </header>
+
+  <!-- Job Listings Section -->
+  <section class="job-listings">
+    <div class="job">
+      <h3>Software Developer</h3>
+      <p>Company: ITC InfoTech</p>
+      <p>Location: Kolkata</p>
+      <button class="schedule-btn" onclick="scheduleAppointment('Software Developer')">Schedule Appointment</button>
+    </div>
+    <div class="job">
+      <h3>Web Devoloper</h3>
+      <p>Company: Tata Consultancy Services</p>
+      <p>Location: Mumbai</p>
+      <button class="schedule-btn" onclick="scheduleAppointment('Software Developer')">Schedule Appointment</button>
+    </div>
+    <div class="job">
+      <h3>Data Analyst</h3>
+      <p>Company: Infosys</p>
+      <p>Location: Noida</p>
+      <button class="schedule-btn" onclick="scheduleAppointment('Software Developer')">Schedule Appointment</button>
+    </div>
+
+    <div class="job">
+      <h3>UI/UX Designer</h3>
+      <p>Company: heathhepta</p>
+      <p>Location: On-site</p>
+      <button class="schedule-btn" onclick="scheduleAppointment('UI/UX Designer')">Schedule Appointment</button>
+    </div>
+    <div class="job">
+      <h3>Digital Marketing</h3>
+      <p>Company: Amazon</p>
+      <p>Location: On-site</p>
+      <button class="schedule-btn" onclick="scheduleAppointment('UI/UX Designer')">Schedule Appointment</button>
+    </div>
+  </section>
+
+  <!-- Modal for Scheduling Appointment -->
+  <div id="appointmentModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="jobTitle">Job Title</h2>
+      <form id="appointmentForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="date">Select Date:</label>
+        <input type="date" id="date" required>
+
+        <button type="submit">Confirm Appointment</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

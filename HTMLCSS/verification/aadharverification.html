@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter your aadhar number:<input type="number" id="x">
+    <!-- <input type="submit" value="submit"> -->
+    <button onclick= aadhar()>Submit</button>
+    <script>
+        function aadhar(){
+
+        
+        const a= 522211118888;
+        const b = document.getElementById("x");
+        if(b != ' '){
+           if(a.match(b)){
+            alert('sucess')
+           }
+        }
+        else{
+            alert("Enter a valid number");
+        }
+    }
+    </script>
+</body>
+</html>

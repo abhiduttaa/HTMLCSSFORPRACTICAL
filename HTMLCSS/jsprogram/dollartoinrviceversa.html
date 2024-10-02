@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Convert Dollars to INR
+      let dollars = Number(prompt("Enter Dollar Amount: ")); // amount in dollars
+      let exchangeRate = 83.25; // current exchange rate (1 USD = 83.25 INR)
+      let inrAmount = dollars * exchangeRate;
+      document.write(dollars + " USD is equal to " + inrAmount + " INR");
+      document.write("<br>")
+
+      // Convert INR to Dollars
+      let inr = Number(prompt("Enter Inr Amount: ")); // amount in INR
+      let usdAmount = inr / exchangeRate;
+      document.write(inr + " INR is equal to " + usdAmount + " USD");
+    </script>
+  </body>
+</html>
